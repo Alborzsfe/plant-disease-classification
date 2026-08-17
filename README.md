@@ -84,14 +84,10 @@ research demonstration and must not be treated as professional agronomic advice.
 ```text
 plant-disease-classification/
 ├── README.md
-├── PROJECT_AUDIT.md
-├── LICENSE
 ├── requirements.txt
 ├── data/
 │   └── README.md
 ├── models/
-│   └── README.md
-├── notebooks/
 │   └── README.md
 ├── results/
 │   └── .gitkeep
@@ -169,6 +165,3 @@ Each script also supports `--help` and optional path overrides.
 
 No license has been selected for this project. Add a license only after choosing
 appropriate terms and separately comply with the dataset's license.
-
-For a detailed inspection of the original scripts and supplied H5 artifact, see
-[`PROJECT_AUDIT.md`](PROJECT_AUDIT.md).
