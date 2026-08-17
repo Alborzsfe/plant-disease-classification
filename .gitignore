@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset and generated artifacts
+data/raw/
+data/processed/
+results/*.png
+results/*.json
+!results/.gitkeep
+
+# Trained model artifacts
+models/*.h5
+models/*.keras
+models/*.weights.h5
+!models/README.md
