@@ -165,3 +165,14 @@ Each script also supports `--help` and optional path overrides.
 
 No license has been selected for this project. Add a license only after choosing
 appropriate terms and separately comply with the dataset's license.
+
+
+## Evaluation limitations
+
+The current evaluation script reports performance on the validation split. Those metrics are useful during development but are not a substitute for a fully independent test set. Before publishing performance claims, record the exact dataset release and license, create a leakage-resistant train/validation/test split, and commit the generated metrics and plots.
+
+Training uses streaming prefetch rather than caching the complete image dataset in memory, which is safer on machines with limited RAM.
+
+## License
+
+The source code is licensed under the MIT License. Dataset images and trained weights may have separate licenses and are not covered unless explicitly stated.

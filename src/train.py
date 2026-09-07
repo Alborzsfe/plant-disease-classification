@@ -42,8 +42,8 @@ def load_datasets(data_dir: Path) -> tuple[tf.data.Dataset, tf.data.Dataset, lis
     class_names = train_ds.class_names
     autotune = tf.data.AUTOTUNE
     return (
-        train_ds.cache().prefetch(autotune),
-        val_ds.cache().prefetch(autotune),
+        train_ds.prefetch(autotune),
+        val_ds.prefetch(autotune),
         class_names,
     )
 
